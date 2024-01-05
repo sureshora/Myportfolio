@@ -1,0 +1,66 @@
+<style>
+    table {
+        border-collapse: collapse;
+        width: 220%;
+        margin: 20px auto;
+        overflow: hidden;
+        resize: horizontal;
+        /* Allow horizontal resizing */
+        display: block;
+    }
+
+    th,
+    td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+        resize: horizontal;
+        /* Allow horizontal resizing */
+        overflow: hidden;
+        /* Hide text overflow */
+    }
+
+    th {
+        background-color: #333;
+        color: white;
+    }
+
+    .scrollss {
+        max-height: 300px;
+        overflow-y: auto;
+    }
+    button {
+            display: block;
+            margin-top: 10px;
+            padding: 8px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+    }
+</style>
+
+<section id="education" class="scrollss">
+    <span class="tits"><h2>Education</h2></span>
+    <table>
+        <tr>
+            <td><b>Degree</b></td>
+            <td><b>University</b></td>
+            <td><b>Years</b></td>
+            <td><b>Subject</b></td>
+        </tr>
+        <tr>
+            <td>Master's Degree</td>
+            <td>Madurai Kamaraj University, Chennai</td>
+            <td>2000 - 2002</td>
+            <td>Master of Computer Application</td>
+        </tr>
+        <tr>
+            <td>Under Graduate</td>
+            <td>University of Madras, Chennai</td>
+            <td>1982 - 1985</td>
+            <td>Mathematics, Accountancy, Mathematical Statistics, Computer Programming</td>
+        </tr>
+    </table>
+    <button type="button" onclick="hidePopup()">Close</button>
+</section>

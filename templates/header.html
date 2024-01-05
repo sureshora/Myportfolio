@@ -1,0 +1,26 @@
+<!-- header.html -->
+
+<div class="header-container">
+    <img src="{{ url_for('static', filename='images/suresh.jpg') }}" alt="Suresh">
+    <div id="readyForOpportunities">Ready For Opportunities</div>
+    <div class="header-content">
+        <h1>{{ name }}</h1>
+        <p>{{ intro }}</p>
+        <p>{{ about | safe }}</p>
+        <p>{{ skills | safe }}</p>
+    </div>
+</div>
+
+<nav class="navbar">
+    <div class="container">
+        <ul>
+            <li><a href="/about">AboutMe</a></li>
+            <li><a href="/skills">Skills</a></li>
+            <li><a href="/education">Education</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/experience">Experience</a></li>
+            <li><a href="/achievements">Achievements</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>

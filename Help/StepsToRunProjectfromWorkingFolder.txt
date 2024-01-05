@@ -1,0 +1,8 @@
+D:\Project_Folder\Flask\Project1>python -m venv venv
+
+D:\Project_Folder\Flask\Project1>venv\Scripts\activate
+
+(venv) D:\Project_Folder\Flask\Project1>pip install Flask
+python.exe -m pip install --upgrade pip (if needed)
+
+Flask run

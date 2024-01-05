@@ -1,0 +1,9 @@
+<section id="achievements">
+    <span class="tits"><h2>Achievements</h2></span>
+    <ul>
+        {% for achievements in achievements %}
+            <li>{{ achievements }}</li>
+        {% endfor %}
+    </ul>
+</section>
+<button type="button" onclick="hidePopup()">Close</button>

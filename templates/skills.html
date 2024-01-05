@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px auto;
+            display: block;
+            overflow-x: auto;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            white-space: normal; /* Adjust this property as needed */
+        }
+
+        th {
+            background-color: #333;
+            /* color: white; */
+        }
+
+        .skills-table {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        button {
+            display: block;
+            margin-top: 10px;
+            padding: 8px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .col1 {
+            width: 30%;
+        }
+
+        .col2 {
+            width: 70%;
+        }
+    </style>
+    <title>Your Page Title</title>
+</head>
+
+<body>
+    <section id="skills">
+        <span class="tits"><h2>Skills</h2></span>
+        <table class="skills-table">
+            <colgroup>
+                <col class="col1">
+                <col class="col2;">
+            </colgroup>
+            <tr>
+                <span class="headings"><th><b>Technical Proficiencies</b></th></span>
+                <span class="headings"><th><b>Details</b></th></span>
+            </tr>
+            
+            <tr>
+                <td><b>Programming Languages:</b></td>
+                <td>Python, C++, Java, SQL</td>
+            </tr>
+            <tr>
+                <td><b>Web Technologies:</b></td>
+                <td>Node.js, Nest.js, React</td>
+            </tr>
+            <tr>
+                <td><b>Web Servers:</b></td>
+                <td>Nginx, Apache, IIS</td>
+            </tr>
+            <tr>
+                <td><b>Micro web framework:</b></td>
+                <td>Flask, Django, Laravel, Spark, Ruby</td>
+            </tr>
+            <tr>
+                <td><b>DevOps:</b></td>
+                <td>Docker, Kubernetes, Maven, Ansible, Jenkins, Prometheus, Puppet, Terraform</td>
+            </tr>
+            <tr>
+                <td><b>Cloud Technologies:</b></td>
+                <td>Azure, AWS, Oracle</td>
+            </tr>
+            <tr>
+                <td><b>Database:</b></td>
+                <td>Oracle, Postgres, MySQL, MongoDB</td>
+            </tr>
+            <tr>
+                <td><b>BI Tools:</b></td>
+                <td>Power BI, Oracle BI, Tableau</td>
+            </tr>
+            <tr>
+                <td><b>Core Competencies:</b></td>
+                <td>Technical proficiency, Creativity, Delegation, Adaptability, Team Leadership, Project Management,
+                    Communication, Problem solving, Software Architecture</td>
+            </tr>
+        </table>
+        <button type="button" onclick="hidePopup()">Close</button>
+    </section>
+</body>
+
+</html>

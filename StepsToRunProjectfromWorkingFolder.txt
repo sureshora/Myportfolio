@@ -1,0 +1,15 @@
+initial setup
+D:\Project_Folder\Flask\Project1>python -m venv venv
+
+D:\Project_Folder\Flask\Project1>venv\Scripts\activate
+
+(venv) D:\Project_Folder\Flask\Project1>pip install Flask
+python.exe -m pip install --upgrade pip (if needed)
+
+Flask run
+
+whenever to run the project
+venv\scripts\activate
+flask run
+http://127.0.0.1:5000
+and ctrl c to come out from live cmd

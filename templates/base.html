@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ name }} - Home</title>
+    <!-- Add any additional meta tags, stylesheets, or scripts here -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+
+    <header class="main-header">
+        {% include 'header.html' %}
+        <!-- <p class="moving-textme">
+            <span class="works"><b>Contact:</b> sureshora@yahoo.com</span>
+        </p> -->
+        <nav class="navbar">
+            <div class="container">
+                <ul>
+                    <li><a href="#" onclick="showPopup('about')">About</a></li>
+                    <li><a href="#" onclick="showPopup('skills')">Skills</a></li>
+                    <li><a href="#" onclick="showPopup('education')">Education</a></li>
+                    <li><a href="#" onclick="showPopup('projects')">Projects</a></li>
+                    <li><a href="#" onclick="showPopup('experience')">Experience</a></li>
+                    <li><a href="#" onclick="showPopup('achievements')">Achievements</a></li>
+                    <li><a href="#" onclick="showPopup('contact')">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <body>
+        <div class="about-container">
+            <h1>About Me</h1>
+        
+            <p>
+                <span class="tits">Innovative IT Leader with Over Two Decades of Government Service:</span>
+                <p>With a rich history spanning 22 years in Government <span class="highlight">IT</span>, I have excelled in seamlessly integrating software development, administration, and management. My extensive journey includes a distinguished three-year tenure in the <span class="highlight">USA</span>, where I was recognized for <span class="highlight">meritorious achievements</span> in navigating the global <span class="highlight">IT</span> landscape.</p>
+            </p>
+        
+            <p>
+                <span class="tits">Pioneer in AI and Machine Learning with a Global Perspective:</span>
+                <p>Armed with advanced certifications in <span class="highlight">AI</span> and <span class="highlight">Machine Learning</span>, I bring a fresh and global perspective to cutting-edge technologies. Recently achieving the <span class="highlight">DevOps Professional</span> certification, I am poised to infuse innovation into dynamic projects, leveraging a unique blend of experience and forward-thinking approaches.</p>
+            </p>
+        
+            <p>
+                <span class="tits">Passionate about Continuous Learning and Project Execution:</span>
+                <p>Having recently retired from Government service, my past three months have been dedicated to upskilling. This intensive period has resulted in actively coding for 30 projects, showcasing my commitment to staying at the forefront of industry trends and technologies.</p>
+            </p>
+        
+            <p>
+                <span class="tits">Ready for a New Challenge in an IT Permanent Position with MNCs:</span>
+                <p>As I embark on the next phase of my career, <span class="seeking-position">I am actively seeking a suitable IT permanent position in a multinational corporation.</span> With a wealth of experience and a recent focus on cutting-edge technologies, I am prepared to contribute my skills and expertise to drive innovation and success in a dynamic corporate environment. Ready to make an instant impact, I look forward to collaborating on exciting and challenging projects that push the boundaries of what technology can achieve.</p>
+            </p>
+        </div>
+        
+
+    {% block content %}{% endblock %}
+
+    <!-- You can add additional elements, styling, or scripts as needed -->
+
+    <!-- Include the script source here -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+    <div class="popup" id="popup">
+        <div class="popup-content" id="popup-content">
+            <span class="close-btn" onclick="hidePopup()">&times;</span>
+            <div id="popup-content-body"></div>
+        </div>
+    </div>
+
+</body>
+{% include 'footer.html' %}
+</html>
